@@ -1,3 +1,5 @@
+"""Модуль администрирования для приложения API."""
+
 from pathlib import Path
 import os
 
