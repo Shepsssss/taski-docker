@@ -156,7 +156,7 @@ jobs:
             sudo docker compose -f docker-compose.production.yml exec backend python manage.py collectstatic
             sudo docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /backend_static/static/
 
-  send_message:  # Исправленный отступ - это отдельная задача на том же уровне, что и deploy
+  send_message:  # Исправленный отступ - это отдельная задача на том же уровне, что и deploy.
     runs-on: ubuntu-latest
     needs: deploy
     steps:
