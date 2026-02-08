@@ -10,7 +10,7 @@ RUN pip install --upgrade pip && \
 # Копируем весь код
 COPY . .
 
-# Собираем статику
+# Собираем статику.
 RUN python manage.py collectstatic --noinput
 
 # Запускаем gunicorn
